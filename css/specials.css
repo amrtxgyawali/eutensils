@@ -1,0 +1,296 @@
+/* Amrit Gyanwali
+C0876919 */
+
+
+.banner-specials {
+	margin-top: 60px;
+
+}
+
+/* style rule for product of the week */
+.product-of-week {
+	width: 35%;
+	float: left;
+	padding-left: 5px;
+	padding-right: 15px;
+	margin-left: 5%;
+	margin-right: 3%;
+	text-align: center;
+	border-radius: 20px;
+	display: inline-block;
+	background-color: rgb(255, 255, 255, 0.1);
+}
+
+/* styke ruke for weekly sales items */
+.weekly-sales {
+	width: 50%;
+	margin-left: 2%;
+	margin-right: 5%;
+	text-align: center;
+	display: inline-block;
+	border-radius: 20px;
+	background-color: rgb(255, 255, 255, 0.1);
+}
+
+.res-img {
+	height: 259px;
+    width: 314px;
+    padding: 5px;
+    border-radius: 12px;
+    margin-left: 5%;
+    border: 3px solid white;
+	transition: all 0.3s ease-out;
+}
+
+.res-img-sales {
+	width: 400px;
+	height: 450px;
+	border: 3px solid white;
+	padding: 5px;
+	border-radius: 12px;
+	/* margin: 2.4%; */
+	color: rgb(255, 255, 255, 0.7);
+	transition: all 0.3s ease-out;
+}
+
+.res-img-sales:hover {
+	width: 400px;
+	height: 450px;
+	border: 0px solid white;
+	padding: 0px;
+	border-radius: 12px;
+	/* margin: 1.4%; */
+	transition: all 0.3s ease-in;
+	color: rgb(255, 255, 255);
+}
+
+
+.sales-img-wrapper {
+	position: relative;
+	display: inline-block;
+	/* margin: 0 3% 3%; */
+}
+
+/* price and info style rule in weekly sales items */
+.sale-itm-product-detail {
+	position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0, 0.65);
+    padding: 5%;
+    color: rgb(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 54%;
+	transition: all 0.3s ease-out;
+}
+
+.sale-itm-product-detail:hover {
+	color: rgb(255, 255, 255);
+	transition: all 0.3s ease-in;
+
+}
+
+.sale-itm-ratings {
+	font-size: 13px;
+	display: grid;
+}
+
+.sale-itm-old-price {
+	text-decoration: line-through;
+	font-size: 11px;
+}
+
+.carousel-container {
+	width: 700px;
+	height: 490px;
+  }
+  
+  .carousel {
+	width: 700px;
+	height: 470px;
+	overflow: hidden;
+  }
+  
+  .carousel-item {
+	width: inherit;
+	height: inherit;
+	float: left;
+	display: none;
+  }
+  
+  .carousel-item p {
+	color: #fff;
+	margin: 0;
+	line-height: 300px;
+	font-family: Calibri;
+	font-size: 50px;
+	text-align: center;
+  }
+  
+  .carousel-controls {
+	width: inherit;
+	height: 35px;
+  }
+  
+  .carousel-container .carousel-controls > a {
+	color: #777;
+	margin: 5px;
+	padding: 5px;
+	font-family: Calibri;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: all 0.2s;
+  }
+  
+  
+  .carousel-container .carousel-controls > a:hover {
+	color: #fff;
+	background-color: #505050!important;
+  }
+  
+  .carousel-container .carousel-controls > a.left {
+	float: left;
+	margin-left: 10%;
+	padding: 5px;
+    background-color: #454545;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-container .carousel-controls > a.right {
+	float: right;
+	margin-right: 10%;
+	padding: 5px;
+    background-color: #454545;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-status {
+	margin: 0;
+	color: #444;
+	font-family: Calibri;
+	font-size: 12px;
+	text-align: center;
+  }
+
+  .search-products {
+	margin-left: 75px;
+	margin-top: 50px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	padding: 2%;
+	margin-bottom: 100px;
+    margin-right: 100px;
+  }
+  
+  input[type='text'] {
+    all: unset;
+    margin-left: 40px;
+    margin-top: 16px;
+    margin-right: 100px;
+	border: 1px solid white;
+	margin-bottom: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+	background-color: #1f1f1f;
+
+}
+
+
+#photos img {
+	display: inline-block;
+    margin-left: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+	margin-top:4%;
+	width: 40%;
+}
+
+#photos .details {
+	display:inline-block;
+	width: 50%;
+	margin-left: 20px;
+}
+
+input[type='button']{
+    margin: auto;
+    margin-top: 3%;
+    background-color: #443d3d;
+    color: #9e9e9e;
+    font-family: 'Montserrat', 'sans-serif';
+    width: 200px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+input[type='button']:hover {
+    color: white;
+    cursor: pointer;
+}
+/* media queries for laptops and small screen laptops*/
+@media (max-width:1345px) {
+	.product-of-week {
+		width: 45%;
+		transition: all 0.3s ease-out;
+	}
+
+	.weekly-sales {
+		width: 40%;
+		transition: all 0.3s ease-out;
+	}
+}
+
+/* media queries for tablet screens*/
+@media (max-width:870px) {
+	.product-of-week{
+		width: 90%;
+		transition: all 0.3s ease-out;
+	}
+
+	.weekly-sales{
+		width: 90%;
+		margin-top: 5%;
+		transition: all 0.3s ease-out;
+		margin-left: 5%;
+	}
+}
+
+/* media queries for tablet screens*/
+@media (max-width:760px) {
+	.res-img-sales, .res-img-sales:hover {
+		height: 310px;
+		width: 240px;
+	}
+}
+
+
+@media (max-width:670px) {
+	.res-img-sales, .res-img-sales:hover {
+		height: 258px;
+		width: 208px;
+	}
+}
+
+@media (max-width:563px) {
+	.res-img-sales, .res-img-sales:hover {
+		height: 353px;
+	width: 279px;
+	}
+}
+
+@media (max-width:388px) {
+	.card-body>.inner {
+		display:inline-block;
+		width:100%;
+	}
+
+	.inner>.res-img{
+		width:90%;
+	}
+}

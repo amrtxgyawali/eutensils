@@ -1,0 +1,221 @@
+/* Amrit Gyanwali
+C0876919 */
+
+/* font import */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+/* unsetting the pre defined rule for form inputs */
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='date'],
+select,
+option,
+textarea {
+    all: unset;
+    margin-left: 40px;
+    margin-top: 16px;
+    margin-right: 100px;
+
+}
+
+.form-body {
+    margin: 0 9% 9%;
+}
+
+.contact-wrapper input,
+select,
+textarea {
+    display: block;
+    margin-bottom: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid white;
+}
+
+.contact-wrapper input:hover,
+select:hover,
+textarea:hover {
+    cursor: pointer;
+}
+
+
+/* Style rule for label element */
+.contact-wrapper label {
+    display: block;
+}
+
+/* rule for text area */
+textarea {
+    width: 500px;
+    height: 150px;
+}
+
+
+
+/* Style rule for unordered list within a form */
+.contact-wrapper form ul {
+    list-style-type: none;
+}
+
+/* Style rule for chkbx class */
+.contact-wrapper .chkbx {
+    display: inline-block;
+    width: 60px;
+}
+
+.contact-wrapper {
+    margin: 5%;
+
+
+}
+
+/* floats the area to left */
+.left-wrapper {
+    float: left;
+    width: 30%;
+    vertical-align: middle;
+    padding-top: 15%;
+}
+
+/* floats the area to right */
+.right-wrapper {
+    width: 65%;
+    display: inline-flex;
+    margin-left: 5%;
+}
+
+.field-set {
+    width: 100px;
+}
+
+.form-body ul {
+    margin-left: 30px;
+}
+
+/* submit and reset button rules */
+.form-body input[type='submit'],
+input[type='reset'] {
+    margin: auto;
+    margin-top: 3%;
+    background-color: #161616;
+    color: #9e9e9e;
+    font-family: 'Montserrat', 'sans-serif'
+}
+
+.form-body input[type='submit']:hover,
+input[type='reset']:hover {
+    color: white;
+    cursor: pointer;
+}
+
+legend {
+    margin: 17px;
+    padding: 10px;
+}
+
+
+/* media queries for small screen laptops*/
+@media (max-width:1375px) {
+    textarea {
+        margin-right: 71px;
+    }
+
+
+}
+
+@media (max-width:1270px) {
+    textarea {
+        width: 425px;
+    }
+
+}
+
+@media (max-width:1150px) {
+    textarea {
+        width: 330px;
+    }
+
+}
+
+/* media queries for tablet with width less than 970px */
+@media (max-width:970px) {
+    textarea {
+        width: 330px;
+    }
+
+    .right-wrapper {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    .left-wrapper {
+        width: 30%;
+    }
+
+}
+
+/* media queries for tablet with width less than 760px */
+
+@media (max-width:760px) {
+    textarea {
+        width: 330px;
+    }
+
+    .right-wrapper {
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .left-wrapper {
+        width: 100%;
+        float: none;
+        padding-top: 0;
+    }
+
+    .field-set {
+        width: 100%;
+    }
+}
+
+/* media queries for mobile screens */
+@media (max-width:500px) {
+    input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='date'],
+select,
+option,
+textarea {
+        width: 250px !important;
+        margin-right: 0px;
+    }
+
+    .right-wrapper {
+        width: 100%;
+        margin: auto;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .left-wrapper {
+        width: 100%;
+        float: none;
+        padding-top: 0;
+    }
+
+    .field-set {
+        width: 100%;
+    }
+
+    textarea {
+        margin-right: 0;
+    }
+
+    .form-body {
+        margin: 0 4% 4%;
+    }
+}

@@ -1,0 +1,474 @@
+/* Amrit Gyanwali
+C0876919 */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* styles for body container */
+body {
+	overflow: auto;
+	color: #9e9e9e;
+	word-spacing: 2px;
+	letter-spacing: 0.01rem;
+	font-family: 'Montserrat';
+	background-color: #161616;
+}
+
+.error {
+	color: red;
+	margin-bottom: 20px;
+}
+
+div.hide {
+	display: none;
+}
+
+.show-hide {
+	cursor: pointer;
+}
+
+/* heading 3 style rule */
+h3 {
+	font-family: 'Montserrat', 'sans-serif';
+}
+
+.container {
+	margin: 0px 0px 0px;
+
+}
+
+/* navigation bar rules */
+nav {
+	display: flex;
+	padding: 10px 30px;
+	align-items: center;
+	box-shadow: #161616;
+	justify-content: flex-start;
+	background-color: #0e0d0d;
+	font-family: Montserrat, sans-serif;
+
+}
+
+.nav-logo {
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-list {
+	list-style: none;
+	margin-top: 10px;
+	vertical-align: top;
+	margin-left: calc(100% /17);
+}
+
+.nav-list li {
+	cursor: pointer;
+	margin-left: 1em;
+	display: inline-block;
+}
+
+/* .nav-list a {
+	color: #9e9e9e;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+	color: #fff;
+	text-shadow: 0 0 9px #fff;
+} */
+
+.nav-btn {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: #0e0d0d;
+}
+
+/* banner with image style */
+.banner {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	background-image: url(../images/banner-0.jpg);
+}
+
+.banner-text {
+	float: left;
+	width: 600px;
+	color: #0e0d0d;
+	padding: 2% 3% 2%;
+}
+
+.banner-text>p {padding: 20px;
+    font-weight: 500;
+    text-align: justify;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.4);
+    font-size: 1.1em;
+}
+
+footer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	font-size: 10px;
+	position: relative;
+	text-align: center;
+	background-color: #0e0d0d;
+}
+
+#nav-check {
+	visibility: hidden;
+}
+
+/* resetting predefined color for anchor tag */
+a:visited,
+a {
+	color: #9e9e9e;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	z-index: 9999;
+}
+
+main {
+	width: 100%;
+	padding-top: 60px;
+	position: relative;
+	min-height: 98vh;
+}
+
+.row {
+	margin: 2%;
+	grid-row: 1;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.card-body>.inner,
+.card-body>.outer {
+	display: flex;
+}
+
+.card-body>.outer {
+	margin: 0 0 4% 9%;
+}
+
+h3 {
+	padding: 5px;
+	margin: 2% auto 2%;
+}
+
+.card-body>.inner>h2 {
+	margin-top: 20%;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.margin-0 {
+	margin: 0 !important;
+}
+
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px 10px rgb(255, 255, 255);
+	border: solid 2px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 10px 10px rgb(152 152 152);
+	border: solid 3px transparent;
+	border-radius: 100px;
+}
+
+/* dropdown style rule for reports */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	background-color: #0e0d0d;
+	position: absolute;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	margin-left: -15px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* audio and video style rule for media.html */
+.video,
+.sound {
+	padding: 1em;
+	text-align: center;
+
+	height: auto;
+	width: 100%;
+}
+
+video {
+	border: 0.1em ridge #FFFFFF;
+	margin-top: 5%;
+	width: 60%;
+
+}
+
+audio {
+	margin-top: 5%;
+	width: 60%;
+}
+
+.margin-5 {
+	margin-top: 15px;
+}
+
+.banner-info {
+	width:100%;
+	display: inline-block;
+}
+
+.specials-sale {
+	margin-left: 10%;
+    border-radius: 10px;
+    width: 425px;
+	animation: animate-sale 2s linear infinite;
+}
+
+.sp-sale-img {
+	border-radius: 10px;
+}
+
+/* style for blinking text  */
+@keyframes animate-sale {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 0.4;
+	}
+
+	60% {
+		opacity: 0.6;
+	}
+
+	80% {
+		opacity: 0.4;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+/* media queries for small screen laptops */
+@media (min-width:967px) and (max-width:1091px) {
+	.nav>.nav-list>li {
+		margin-left: 0.5rem;
+		transition: all 0.3s ease-in;
+	}
+}
+
+/* media queries for small screen laptops */
+@media (min-width:967px) and (max-width:1024px) {
+	.nav-list {
+		margin-left: 0px;
+		transition: all 0.3s ease-in;
+	}
+}
+
+@media (max-width:1200px) {
+
+	video,
+	audio {
+		width: 80%;
+	}
+}
+
+/* media queries for tablets view with max width of 967px */
+@media (max-width:967px) {
+
+	video,
+	audio {
+		width: 90%;
+	}
+}
+
+
+/* media queries for mobile view with max width of 615px */
+@media (max-width:615px) {
+	.banner-text {
+		width: 100%;
+
+	}
+
+	.dropdown-content {
+		display: none;
+		background-color: #0e0d0d;
+		position: absolute;
+		min-width: 100px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		padding: 12px 16px;
+		z-index: 1;
+		margin-left: 65px;
+		margin-top: -170px;
+	}
+
+}
+
+
+
+/* Media queries for mobile and tablet view */
+/* style rule mainly for adding 3 bar nav button on mobile and tablet views */
+@media (max-width:967px) {
+	nav {
+		border-bottom: #949191 solid 1px;
+		padding: 10px 30px;
+	}
+
+	nav>.nav-btn>label {
+		display: inline-block;
+		width: 35px;
+		height: 40px;
+		padding-top: 10px;
+	}
+
+	nav>.nav-btn {
+		display: inline-block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+	.nav-list {
+		margin-left: 0%;
+		margin-top: 20px;
+	}
+	
+	nav>.nav-btn>label:hover,
+	.nav-btn>label {
+		background-color: #0e0d0d;
+	}
+
+	nav>.nav-links {
+		position: absolute;
+		display: block;
+		width: 100%;
+		background-color: #0e0d0d;
+		transition: all 0.3s ease-in;
+		overflow-y: hidden;
+		top: 50px;
+		left: 0px;
+	}
+
+	nav>.nav-links>a {
+		display: block;
+		width: 100%;
+	}
+	
+	.nav-list li {
+		display: block;
+		margin: 1.2em;
+		margin-left: 10%;
+	}
+
+	nav>ul {
+		border-top: 1px solid white;
+		padding-left: 0px;
+		margin-top: 10px;
+	}
+
+	nav>.nav-btn>label>span {
+		display: block;
+		width: 25px;
+		height: 10px;
+		border-top: 2px solid white;
+	}
+
+	/* works like if condition, if nav check is unchecked, it will set the height to 0, so that nav bar as dropdown will collapse */
+	nav>#nav-check:not(:checked)~.nav-links {
+		height: 0px;
+	}
+
+	/* works like if condition, if nav check is checked, it will set the height to 325, so that nav bar as dropdown will expand */
+	nav>#nav-check:checked~.nav-links {
+		height: 325px;
+	}
+
+	.dropdown-content {
+		display: none;
+		background-color: #0e0d0d;
+		position: absolute;
+		min-width: 100px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		padding: 12px 16px;
+		z-index: 1;
+		margin-left: 65px;
+		margin-top: -170px;
+	}
+
+}
+
+/* adjusting video on small screen laptops */
+@media (max-width:1350px) {
+
+	.mobile-set {
+		position: fixed;
+	}
+
+	.media-main {
+		padding-bottom: 50px;
+	}
+}
+
+/* media queries for mobile view*/
+@media (max-width:500px) {
+	.specials-sale {
+		margin: 5%;
+		width:100%;
+	}
+
+	.sp-sale-img {
+		width: 90%;
+	}
+}

@@ -1,0 +1,99 @@
+/* Amrit Gyanwali
+C0876919 */
+
+
+.aboutus-container{
+  width: 100%;
+  padding:60px;
+  
+}
+
+.aboutus-wrapper{
+  width:100%;
+  padding-left: 7%;
+	text-align: justify;
+  display: inline-flex;
+}
+
+.aboutus-img  {
+  padding: 5%;
+  margin: -10% 0 0 1%;
+}
+
+.aboutus-label {
+  text-align: center;
+    font-size: 2.45rem;
+    margin-bottom: 30px;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.story-margin {
+  margin-top: -5%;
+  
+}
+
+.being-reason, .our-guarantee, .our-story {
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: justify;
+}
+
+
+/* media queries for tablets and small screen laptops*/
+@media (max-width:1120px) {
+	.aboutus-wrapper {
+    display: block;
+  }
+
+  .aboutus-img {
+    display: none;
+  }
+
+  .about-history{
+    margin-top: 10%;
+  }
+}
+
+
+/* media queries for mobile devices*/
+@media (max-width:550px) {
+
+  .aboutus-label {
+    font-size: 1.5rem;
+  }
+
+	.aboutus-wrapper {
+    display: block;
+    padding-left: 0;
+  }
+
+  .aboutus-container{
+    padding: 30px;
+  }
+
+  .aboutus-img {
+    display: none;
+  }
+
+  .about-history{
+    margin-top: 10%;
+  }
+
+  .being-reason {
+    padding-right: 0;
+  }
+
+  .our-guarantee, .our-story {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h2 {
+    padding-top:30px
+  }
+}
+
+

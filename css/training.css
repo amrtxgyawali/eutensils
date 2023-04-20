@@ -1,0 +1,67 @@
+ /* Amrit Gyanwali
+C0876919 */
+
+ /* Style for table element */
+ table {
+     border: 0.1em solid #373737;
+     border-collapse: collapse;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ /* Style specifies border and padding for th and td elements */
+ th,
+ td {
+     border: 0.1em solid #373737;
+     padding: 1em;
+ }
+
+ /* Style for th element */
+ th {
+     background-color: #0e0d0d;
+     color: #FFFFFF;
+ }
+
+ /* highlighting odd row in table */
+ tr:nth-child(odd) {
+     background-color: #252525;
+ }
+
+ /* table row hover style */
+ tr:hover {
+     color: #FFFFFF;
+ }
+
+ /* Style for caption element */
+ caption {
+     font-size: 1.5em;
+     font-weight: bold;
+     padding-bottom: 0.5em;
+ }
+
+ /* desktop view rules */
+ .desktop {
+     margin: 5%;
+ }
+
+ /* mobile view rule */
+ .mobile{
+    display: none;
+ }
+
+
+ /* media queries for mobile views */
+@media (max-width:655px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        font-size: 0.7em;
+        padding: 25px;
+    }
+
+}
