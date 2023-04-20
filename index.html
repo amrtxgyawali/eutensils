@@ -1,0 +1,115 @@
+<!-- 
+    Amrit Gyanwali
+    C0876918
+-->
+
+<!-- Ref: w3schools.com for several conceptual informations during the term project build -->
+
+<!DOCTYPE HTML5>
+<html lang="en">
+
+<head>
+  <title>EUtensils</title>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">  <!-- common styles for all page -->
+  <script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="main-page">
+  <div class="container">
+    <header>
+
+      <!-- Navigation for mobile and desktop views -->
+      <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <a class="nav-logo" href="index.html" src="/images/logo.png"><img src="images/logo.png" height="50px" id="logo"
+            alt="logo image"></a>
+
+        <div class="nav-btn">
+          <!-- Creates 3 bar button for mobile view -->
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <!-- Navigation menu items -->
+        <ul class="nav-list nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="team.html">Our Team</a>
+          </li>
+          <li>
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="specials.html">Specials</a>
+          </li>
+          <li>
+            <a href="media.html">Media</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          
+          <!-- Drop down menu linking to database application MVC table data -->
+          <li>
+            <div class="dropdown">
+              <a class="nav-report">Reports</a>
+              <div class="dropdown-content">
+                <br>
+                <a href="http://185.113.4.41:7222/web1.html" target="_blank">WEB1</a><br><br>
+                <a href="http://185.113.4.41:7222/web2.html" target="_blank">WEB2</a><br><br>
+                <a href="http://185.113.4.41:7222/web3.html" target="_blank">WEB3</a><br><br>
+                <a href="http://185.113.4.41:7222/web4.html" target="_blank">WEB4</a>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Index page main container -->
+    <main>
+      <div class="banner">
+        <div class="banner-info">
+          <h3 class="banner-text">
+            <p>
+              Welcome to EUtensils Pvt. Ltd., home of various electric home appliances which help making life easier.
+              Our big product market is electric can openers, where more than 100s of electric can openers from
+              numerous brands can be found, be it for personal or commerical use. </p> <br>
+            <p>
+              Apart, you can find several electric utensils like mixer, rice cooker, microwaves, air fryer, coffee maker etc. 
+              Its a electric home to your electric needs.
+            </p>
+          </h3>
+        </div>
+        
+        <div class="specials-sale">
+          <a href="specials.html"> <img class="sp-sale-img" src="images/banner-sale.png" alt="banner sale image" height="200px" width="400px"></a>
+        </div>
+        
+      </div>
+     
+
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <a href="mailto:info@eutensils.com">Request Information</a><br>
+      <p> &copy; Copyright 2022 All Rights Reserved. Amrit Gyanwali (C0876918)</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

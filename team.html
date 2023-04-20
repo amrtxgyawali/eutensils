@@ -1,0 +1,143 @@
+<!-- 
+    Amrit Gyanwali
+    C0876918
+-->
+
+<!-- Ref: w3schools.com for several conceptual informations during the term project build -->
+
+<!DOCTYPE HTML5>
+<html lang="en">
+
+<head>
+  <title>EUtensils</title>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">  <!-- common styles for all page -->
+  <link rel="stylesheet" href="css/team.css">
+  <script src="js/main.js"></script>
+  <script src="js/team.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="main-page">
+  <div class="container">
+    <header>
+      <!-- Navigation for mobile and desktop views -->
+      <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <a class="nav-logo" href="index.html" src="/images/logo.png"><img src="images/logo.png" height="50px" id="logo"
+            alt="logo image"></a>
+
+        <div class="nav-btn">
+          <!-- Creates 3 bar button for mobile view -->
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <!-- Navigation menu items -->
+        <ul class="nav-list nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="team.html">Our Team</a>
+          </li>
+          <li>
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="specials.html">Specials</a>
+          </li>
+          <li>
+            <a href="media.html">Media</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Drop down menu linking to database application MVC table data -->
+          <li>
+            <div class="dropdown">
+              <a class="nav-report">Reports</a>
+              <div class="dropdown-content">
+                <br>
+                <a href="http://185.113.4.41:7222/web1.html" target="_blank">WEB1</a><br><br>
+                <a href="http://185.113.4.41:7222/web2.html" target="_blank">WEB2</a><br><br>
+                <a href="http://185.113.4.41:7222/web3.html" target="_blank">WEB3</a><br><br>
+                <a href="http://185.113.4.41:7222/web4.html" target="_blank">WEB4</a>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Team page container -->
+    <main>
+      <!-- Section element containing team leaders and their profiles -->
+      <section>
+        <h2 class="team-leader-heading">Meet Our Leaders.</h2>
+        <div class="leaders">
+          <!-- wrapper for all leaders -->
+          <div class="leaders-wrapper">
+            <div class="leader-image">
+              <figure>
+                <img class="img-leader" src="images/team-member-0.jpg" alt="Leader image">
+                <figcaption class="img-leader-detail">Amrit Gyanwali <br> CEO & Founder</figcaption>
+              </figure>
+            </div>
+            <div class="leader-image">
+              <figure>
+                <img class="img-leader" src="images/team-member-1.jpg" alt="Leader image">
+                <figcaption class="img-leader-detail">Angma Sherpa <br> Relationship Manager</figcaption>
+              </figure>
+            </div>
+            <div class="leader-image">
+              <figure>
+                <img class="img-leader" src="images/team-member-2.jpg" alt="Leader image">
+                <figcaption class="img-leader-detail">Junu Tamang <br> Branch Manager </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blinking message to grab end user atttention -->
+      <aside class="team-aside">
+        <p class="hiring-aside">
+          We are hiring!!!!<br>
+          Drop your resumes at our stores.
+        </p>
+      </aside>
+
+      <!-- Article element with basic company details -->
+      <article class="team-article">
+        <h3>We are small basic home electric utensils provider in the city of Sarnia. We have good teams well versed in
+          customer support and satisfaction in all our stores within the city.
+          <br /> Our online Customer Support is also available 24x7.
+        </h3>
+      </article>
+
+      <br/><br/><br/><br/>
+      <div id="employee-list">
+      </div>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <a href="mailto:info@eutensils.com">Request Information</a><br>
+      <p> &copy; Copyright 2022 All Rights Reserved. Amrit Gyanwali (C0876918)</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

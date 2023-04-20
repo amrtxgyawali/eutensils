@@ -1,0 +1,235 @@
+<!-- 
+    Amrit Gyanwali
+    C0876918
+-->
+
+<!-- Ref: w3schools.com for several conceptual informations during the term project build -->
+
+<!DOCTYPE HTML5>
+<html lang="en">
+
+<head>
+  <title>EUtensils</title>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css"> <!-- common styles for all page -->
+  <link rel="stylesheet" href="css/training.css">
+  <script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="main-page">
+  <div class="container">
+    <header>
+      <!-- Navigation for mobile and desktop views -->
+      <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <a class="nav-logo" href="index.html" src="/images/logo.png"><img src="images/logo.png" height="50px" id="logo"
+            alt="logo image"></a>
+
+        <div class="nav-btn">
+          <!-- Creates 3 bar button for mobile view -->
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <!-- Navigation menu items -->
+        <ul class="nav-list nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="team.html">Our Team</a>
+          </li>
+          <li>
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="specials.html">Specials</a>
+          </li>
+          <li>
+            <a href="media.html">Media</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Drop down menu linking to database application MVC table data -->
+          <li>
+            <div class="dropdown">
+              <a class="nav-report">Reports</a>
+              <div class="dropdown-content">
+                <br>
+                <a href="http://185.113.4.41:7222/web1.html" target="_blank">WEB1</a><br><br>
+                <a href="http://185.113.4.41:7222/web2.html" target="_blank">WEB2</a><br><br>
+                <a href="http://185.113.4.41:7222/web3.html" target="_blank">WEB3</a><br><br>
+                <a href="http://185.113.4.41:7222/web4.html" target="_blank">WEB4</a>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Container containing the main contents of trainings -->
+    <main>
+      <!-- Specific for mobile views with screen size less than 550px -->
+      <div class="mobile">
+        <h3>Product Training Schedule</h3>
+        <br>
+        <p><strong>FORMAT</strong>: <br> <i>PRODUCT_NAME: INSTRUCTOR(CLASS-PRICE) <br>
+          (START_TIME, END_TIME), DAYS</i></p>
+        <br>
+        <p>Delux Can Opener: Thomas(B-$12) <br> 11:00am &amp; 2:00pm, (Mon, Wed, Fri)</p><br>
+        <p>Homelet Electric Can Opener: Peter(B-$11) <br> 3:00pm &amp; 4:00pm, (Tue, Thu)</p><br>
+        <p>Hamilton Beach Can Opener: Roberts(A-$15)<br> 4:00pm &amp; 6:00pm, (Tue, Thu)</p><br>
+        <p>Bella Electric Can Opener: Dustin(A-$22)<br> 8:00am &amp; 1:15pm, (Mon, Wed, Fri)</p><br>
+        <p>IMUSA USA Can Opener: Roberts(B-$17)<br> 11:00am &amp; 3:00pm, (Tue, Thu)</p><br>
+        <p>CUISINART Deluxe Can Opener: Anna(A-$17)<br> 9:00am &amp; 11:00am, (Mon, Wed, Fri)</p><br>
+        <p>OpenStation Can Opener: Thomas(B-$32)<br> 12:00pm &amp; 2:00pm, (Mon, Wed, Fri)</p><br>
+        <p>Proctor-Silex Can Opener: Stella(B-$39)<br> 10:00am &amp; 2:30pm, (Tue, Thu)</p><br>
+        <p>Cuisinart 60C Can Opener: Maria(A-$30)<br> 11:00am &amp; 3:00pm, (Tue, Thu)</p><br>
+        <p>Mock ST Electric Can Opener: Lawrence(A-$25)<br> 11:00am &amp; 3:15pm, (Mon, Wed, Fri)</p><br>
+        <p>Robo Twist Can Opener: Schultz(B-$12)<br> 10:30am &amp; 4:00pm, (Tue, Thu)</p><br>
+        <p>Amco Swing Can Opener: Roberts(A-$12)<br> 10:45am &amp; 2:00pm, (Mon, Wed, Fri)</p><br>
+      </div>
+
+      <!-- Table view of trainings for desktops and tablets -->
+      <div class="desktop">
+        <table>
+          <caption>Product Training Schedule</caption>
+          <!-- Table headings -->
+          <tr>
+            <th>Product</th>
+            <th>Days</th>
+            <th>Times</th>
+            <th>Instructor</th>
+            <th>Room</th>
+            <th>Price</th>
+          </tr>
+          <!-- Training Data -->
+          <tr>
+            <td>Delux Can Opener</td>
+            <td>Mon, Wed, Fri</td>
+            <td>11:00am, 2:00 pm</td>
+            <td>Thomas</td>
+            <td>B</td>
+            <td>$12</td>
+          </tr>
+          <tr>
+            <td>Homelet Electric Can Opener</td>
+            <td>Tue, Thu</td>
+            <td>3:00pm, 4:00pm</td>
+            <td>Peter</td>
+            <td>B</td>
+            <td>$11</td>
+          </tr>
+          <tr>
+            <td>Hamilton Beach Can Opener</td>
+            <td>Tue, Thu</td>
+            <td>4:00pm, 6:00pm</td>
+            <td>Roberts</td>
+            <td>A</td>
+            <td>$15</td>
+          </tr>
+          <tr>
+            <td>Bella Electric Can Opener</td>
+            <td>Mon, Wed, Fri</td>
+            <td>8:00am, 1:15pm</td>
+            <td>Dustin</td>
+            <td>A</td>
+            <td>$22</td>
+          </tr>
+          <tr>
+            <td>IMUSA USA Can Opener</td>
+            <td>Tue, Thu</td>
+            <td>11:00am, 3:00pm</td>
+            <td>Roberts</td>
+            <td>B</td>
+            <td>$17</td>
+          </tr>
+          <tr>
+            <td>CUISINART Deluxe Can Opener</td>
+            <td>Mon, Wed, Fri </td>
+            <td>9:00am, 11:00am</td>
+            <td>Anna</td>
+            <td>A</td>
+            <td>$17</td>
+          </tr>
+          <tr>
+            <td>OpenStation Can Opener</td>
+            <td>Mon, Wed, Fri</td>
+            <td>12:00pm, 2:00 pm</td>
+            <td>Thomas</td>
+            <td>B</td>
+            <td>$32</td>
+          </tr>
+          <tr>
+            <td>Proctor-Silex Can Opener</td>
+            <td>Tue, Thu</td>
+            <td>10:00am, 2:30pm</td>
+            <td>Stella</td>
+            <td>B</td>
+            <td>$39</td>
+          </tr>
+          <tr>
+            <td>Cuisinart 60C Can Opener</td>
+            <td>Tue, Thu</td>
+            <td>11:00am, 3:00pm</td>
+            <td>Maria</td>
+            <td>A</td>
+            <td>$30</td>
+          </tr>
+          <tr>
+            <td>Mock ST Electric Can Opener</td>
+            <td>Mon, Wed, Fri</td>
+            <td>11:00am, 3:15pm</td>
+            <td>Lawrence</td>
+            <td>A</td>
+            <td>$25</td>
+          </tr>
+          <tr>
+            <td>Robo Twist Can Opener</td>
+            <td>Tue, Thu</td>
+            <td>10:30am, 4:00pm</td>
+            <td>Schultz</td>
+            <td>B</td>
+            <td>$12</td>
+          </tr>
+          <tr>
+            <td>Amco Swing Can Opener</td>
+            <td>Mon, Wed, Fri </td>
+            <td>10:45am, 2:00pm</td>
+            <td>Roberts</td>
+            <td>A</td>
+            <td>$12</td>
+          </tr>
+          <tr>
+            <td>IMUSA USA Can Opener</td>
+            <td>Tue, Thu</td>
+            <td>3:00pm, 6:00pm</td>
+            <td>Schultz</td>
+            <td>B</td>
+            <td>$19</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <a href="mailto:info@eutensils.com">Request Information</a><br>
+      <p> &copy; Copyright 2022 All Rights Reserved. Amrit Gyanwali (C0876918)</p>
+    </footer>
+
+  </div>
+</body>
+</html>

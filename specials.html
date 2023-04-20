@@ -1,0 +1,201 @@
+<!-- 
+    Amrit Gyanwali
+    C0876918
+-->
+
+<!-- Ref: w3schools.com for several conceptual informations during the term project build -->
+
+<!DOCTYPE HTML5>
+<html lang="en">
+
+<head>
+    <title>EUtensils</title>
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css"> <!-- common styles for all page -->
+    <link rel="stylesheet" href="css/specials.css">
+    <script src="js/main.js"></script>
+    <script src="js/specials.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="main-page">
+    <div class="container">
+        <header>
+            <!-- Navigation for mobile and desktop views -->
+            <nav class="nav">
+                <input type="checkbox" id="nav-check">
+                <a class="nav-logo" href="index.html" src="/images/logo.png"><img src="images/logo.png" height="50px"
+                        id="logo" alt="logo image"></a>
+
+                <div class="nav-btn">
+                    <!-- Creates 3 bar button for mobile view -->
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <!-- Navigation menu items -->
+                <ul class="nav-list nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="team.html">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="training.html">Training</a>
+                    </li>
+                    <li>
+                        <a href="specials.html">Specials</a>
+                    </li>
+                    <li>
+                        <a href="media.html">Media</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                    <!-- Drop down menu linking to database application MVC table data -->
+                    <li>
+                        <div class="dropdown">
+                            <a class="nav-report">Reports</a>
+                            <div class="dropdown-content">
+                                <br>
+                                <a href="http://185.113.4.41:7222/web1.html" target="_blank">WEB1</a><br><br>
+                                <a href="http://185.113.4.41:7222/web2.html" target="_blank">WEB2</a><br><br>
+                                <a href="http://185.113.4.41:7222/web3.html" target="_blank">WEB3</a><br><br>
+                                <a href="http://185.113.4.41:7222/web4.html" target="_blank">WEB4</a>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <div class="banner-specials">
+
+                <!-- class row Binds multiple divs in single row for desktop view -->
+                <!-- but binds as block element for mobile view to show only one element per row -->
+                <div class="row">
+                    <div class="product-of-week">
+                        <h3 class="underline">Product Of The Week</h3>
+                        <div class="card-body">
+                            <div class="inner">
+                                <img alt="product of the day" class="res-img float-left"
+                                    src="images/product-of-day.jpg">
+                                <h2>Amazon Basics Electric Can Opener, Black</h2>
+                            </div>
+                            <h3 class="underline margin-0">Features</h3>
+                            <div class="outer">
+                                <ul class="left-align">
+                                    <li>Electric can opener for opening standard-sized cans</li>
+                                    <li>Powerful stainless steel blade smoothly and safely opens cans with no snagging
+                                    </li>
+                                    <li>Automatic stop, on/off, and release/locking mechanisms</li>
+                                    <li>Wide, non-slip base keeps the opener in place on your countertop</li>
+                                    <li>Magnetic lid holder prevents lid from dropping into the can</li>
+                                    <li>Modern, compact design with durable plastic housing</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weekly-sales">
+                        <h3 class="underline">Weekly Sales</h3>
+                        <div class="card-body">
+                            <div class="carousel-container">
+                                <div class="carousel">
+                                    <div id="item1" class="carousel-item sales-img-wrapper">
+                                        <img class="res-img-sales" src="images/sale-1.jpg" alt="sale item">
+                                        <div class="sale-itm-product-detail">
+                                            <span class="sale-itm-name">COSORI Air Fryer 5L</span>
+                                            <span class="sale-itm-ratings">4.5 out of 5 stars</span>
+                                            <span class="sale-itm-price">$130.59</span>
+                                            <span class="sale-itm-old-price">$143.99</span>
+                                        </div>
+                                    </div>
+                                    <div id="item2" class="carousel-item sales-img-wrapper">
+                                        <img class="res-img-sales" src="images/sale-2.jpg" alt="sale item">
+                                        <div class="sale-itm-product-detail">
+                                            <span class="sale-itm-name">COSORI Electric Kettle 1.7L</span>
+                                            <span class="sale-itm-ratings">4.5 out of 5 stars</span>
+                                            <span class="sale-itm-price">$33.59</span>
+                                            <span class="sale-itm-old-price">$47.99</span>
+                                        </div>
+                                    </div>
+                                    <div id="item3" class="carousel-item sales-img-wrapper">
+                                        <img class="res-img-sales" src="images/sale-3.jpg" alt="sale item">
+                                        <div class="sale-itm-product-detail">
+                                            <span class="sale-itm-name">KitchenAid K45SSOB Classic</span>
+                                            <span class="sale-itm-ratings">4.7 out of 5 stars</span>
+                                            <span class="sale-itm-price">$279.00</span>
+                                            <span class="sale-itm-old-price">$328.98</span>
+                                        </div>
+                                    </div>
+                                    <div id="item4" class="carousel-item sales-img-wrapper">
+                                        <img class="res-img-sales" src="images/sale-4.jpg" alt="sale item">
+                                        <div class="sale-itm-product-detail">
+                                            <span class="sale-itm-name">BELLA Electric Can Opener</span>
+                                            <span class="sale-itm-ratings">4.2 out of 5 stars</span>
+                                            <span class="sale-itm-price">$23.65</span>
+                                            <span class="sale-itm-old-price">$40.45</span>
+                                        </div>
+                                    </div>
+                                    <div id="item5" class="carousel-item sales-img-wrapper">
+                                        <img class="res-img-sales" src="images/sale-5.jpg" alt="sale item">
+                                        <div class="sale-itm-product-detail">
+                                            <span class="sale-itm-name">Instant Pot Duo 7-in-1</span>
+                                            <span class="sale-itm-ratings">4.6 out of 5 stars</span>
+                                            <span class="sale-itm-price">$78.0</span>
+                                            <span class="sale-itm-old-price">$104.99</span>
+                                        </div>
+                                    </div>
+                                    <div id="item6" class="carousel-item sales-img-wrapper">
+                                        <img class="res-img-sales" src="images/sale-6.jpg" alt="sale item">
+                                        <div class="sale-itm-product-detail">
+                                            <span class="sale-itm-name">BLACK+DECKER Electric Skillet</span>
+                                            <span class="sale-itm-ratings">4.5 out of 5 stars</span>
+                                            <span class="sale-itm-price">$53.83</span>
+                                            <span class="sale-itm-old-price">$69.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-controls">
+                                    <a href="#" class="left" onclick="showSlide(true); return false;">prev</a>
+                                    <a href="#" class="right" onclick="showSlide(false); return false;">next </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="search-products">
+                Search by tags: <input type="text" size="30" id="search">
+                <input type="button" value="Search" id="btnSearch">
+                <h1>Results from Flickr:</h1>
+                <div id="photos"></div>
+            </div>
+        </main>
+
+        <!-- Footer start -->
+        <footer>
+            <a href="mailto:info@eutensils.com">Request Information</a><br>
+            <p> &copy; Copyright 2022 All Rights Reserved. Amrit Gyanwali (C0876918)</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

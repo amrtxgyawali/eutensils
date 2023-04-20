@@ -1,0 +1,148 @@
+<!-- 
+    Amrit Gyanwali
+    C0876918
+-->
+
+<!-- Ref: w3schools.com for several conceptual informations during the term project build -->
+
+<!DOCTYPE HTML5>
+<html lang="en">
+
+<head>
+  <title>EUtensils</title>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">  <!-- common styles for all page -->
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="main-page">
+  <div class="container">
+    <header>
+      <!-- Navigation for mobile and desktop views -->
+      <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <a class="nav-logo" href="index.html" src="/images/logo.png"><img src="images/logo.png" height="50px" id="logo"
+            alt="logo image"></a>
+
+        <div class="nav-btn">
+          <!-- Creates 3 bar button for mobile view -->
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <!-- Navigation menu items -->
+        <ul class="nav-list nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="team.html">Our Team</a>
+          </li>
+          <li>
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="specials.html">Specials</a>
+          </li>
+          <li>
+            <a href="media.html">Media</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Drop down menu linking to database application MVC table data -->
+          <li>
+            <div class="dropdown">
+              <a class="nav-report">Reports</a>
+              <div class="dropdown-content">
+                <br>
+                <a href="http://185.113.4.41:7222/web1.html" target="_blank">WEB1</a><br><br>
+                <a href="http://185.113.4.41:7222/web2.html" target="_blank">WEB2</a><br><br>
+                <a href="http://185.113.4.41:7222/web3.html" target="_blank">WEB3</a><br><br>
+                <a href="http://185.113.4.41:7222/web4.html" target="_blank">WEB4</a>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="aboutus-container">
+        <div class="aboutus-wrapper">
+          <!-- Introduction to the company -->
+          <div id="aboutus-intro">
+            <h2 class="aboutus-label">ABOUT US</h2>
+            <div> We, E-Utensils, formerly known as Sarnia Appliances, are one of the popular electric utensils supplier's
+              in Sarnia.
+              We have been making our customers happy since 2015, though we started in 2012 and had to go through rough
+              times in between.
+              
+              Since 2015, after we rebranded our company with various quality electric utensils. <br><br>
+              </div>
+              <div class="hide">
+              Over a span of seven years, we have been able to open our stores at two more places in Sarnia and
+              wish to grow more with our customer's love and support so that we could provide services to as many people
+              as possible
+              in Sarnia and even beyond the city.
+              <br><br>
+            </div>
+            <a href="#" class="show-hide">Show more..</a>
+          </div>
+
+          <div class="aboutus-img">
+            <img src="images/about-img.png" alt="about us image">
+          </div>
+        </div>
+
+        <!-- graphical representation of company history -->
+        <div class="about-history">
+          <div class="our-story">
+            <img src="images/aboutus-history.png" class="full-width story-margin" alt="about us history">
+          </div>
+          <div class="being-reason">
+            <h2 class="aboutus-label">Why you should shop with us!</h2>
+            <ol>
+              <li>Quick response to all the answers you need.</li>
+              <li>An enhanced and interactive user experience.</li>
+              <li>Always feel like talking to the owner.</li>
+              <li>Our unique culture and way of working.</li>
+              <li>Deals, with the lowest prices, guaranteed.</li>
+              <li>VIP memberships for awesome previleges.</li>
+              <li>Multiple stores for ease of access.</li>
+              <li>Extended guarantees on most of the products.</li>
+            </ol>
+          </div>
+          
+          <div class="our-guarantee">
+            <h2 class="aboutus-label"> Our Guarantee</h2>
+            <P>We guarantee everything we sell. If you are not satisfied with one the product you purchased from us at
+              the time you recieve it, or if one of it does not perform to your satisfaction, you can simply return it
+              to the store you bought it from and ask for repair, replacement or refund. Damage due to wear and tear
+              will be repaired at a resonable charge.</P>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <a href="mailto:info@eutensils.com">Request Information</a><br>
+      <p> &copy; Copyright 2022 All Rights Reserved. Amrit Gyanwali (C0876918)</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
