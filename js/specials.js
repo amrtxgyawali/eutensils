@@ -32,7 +32,7 @@ $(document).ready(function () {
       searchTerm = $("#search").val();
       // Build the URL based on the search term
       var url =
-        "http://api.flickr.com/services/feeds/photos_public.gne?" +
+        "https://api.flickr.com/services/feeds/photos_public.gne?" +
         "format=json&jsoncallback=?&tags=" +
         searchTerm +
         "&tagmode=all";
