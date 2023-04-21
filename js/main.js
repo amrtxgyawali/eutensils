@@ -1,3 +1,14 @@
+$(document).ready(() => {
+  const links = $("#aboutus-intro a");
+  if (links && links.length > 0) {
+    links.each((index, element) => {
+      element.onclick = toggleClass;
+    });
+  }
+
+  $("nav").highlightMenu();
+});
+
 (function ($) {
   $.fn.highlightMenu = function (options) {
     // Define default options
@@ -8,7 +19,7 @@
         hoverBgColor: "#cccccc",
         hoverColor: "#fff",
         transistion: "color 0.3s ease",
-        cursorType: "pointer"
+        cursorType: "pointer",
       },
       options
     );
@@ -21,11 +32,10 @@
         .css("text-decoration", "none")
         .css("color", o.color)
         .css("transition", o.transistion)
-        .css("cursor", o.cursorType)
+        .css("cursor", o.cursorType);
       $("ul").css("display", "inline-block").css("list-style-type", "none");
       items.mouseover(function () {
-        $(this)
-          .css("color", o.hoverColor);
+        $(this).css("color", o.hoverColor);
       });
       //mouseout event
       items.mouseout(function () {
@@ -34,17 +44,6 @@
     });
   };
 })(jQuery);
-
-$(document).ready(() => {
-  const links = $("#aboutus-intro a");
-  if (links && links.length > 0) {
-    links.each((index, element) => {
-      element.onclick = toggleClass;
-    });
-  }
-
-  $("nav").highlightMenu();
-});
 
 function toggleClass() {
   const condition = this.innerHTML;
@@ -58,5 +57,4 @@ function toggleClass() {
     this.innerHTML = "Show more..";
     $(this).prev().slideUp(1000); //easing added
   }
-  
 }
