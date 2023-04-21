@@ -1,11 +1,12 @@
 $(document).ready(() => {
-  const links = $("#aboutus-intro a");
+  const links = $(".aboutus-container a");
   if (links && links.length > 0) {
     links.each((index, element) => {
       element.onclick = toggleClass;
     });
   }
 
+  //code to highlight the menu
   $("nav").highlightMenu();
 });
 
@@ -45,16 +46,17 @@ $(document).ready(() => {
   };
 })(jQuery);
 
+//class for toggling the class
 function toggleClass() {
   const condition = this.innerHTML;
-  let showMore = condition === "Show more..";
+  let showMore = condition === "<br>Show more..";
   const divOnAction = $(this).prev();
-  divOnAction.toggleClass("hide");
   if (showMore) {
-    this.innerHTML = "Show less..";
+    this.innerHTML = "<br>Show less..";
     $(this).prev().slideDown(1000); //easing added
   } else {
-    this.innerHTML = "Show more..";
+    this.innerHTML = "<br>Show more..";
     $(this).prev().slideUp(1000); //easing added
   }
+  divOnAction.toggleClass("hide");
 }

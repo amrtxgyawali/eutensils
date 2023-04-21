@@ -4,6 +4,7 @@ var iCurrentSlide = 1;
 var iNextSlide = 2;
 var iSlideInterval = 3; // in seconds
 var looper = null;
+var searchTerm;
 
 $(document).ready(function () {
   // Show the first slide and start the slide show:
@@ -22,7 +23,7 @@ $(document).ready(function () {
     }
   );
 
-  var searchTerm;
+  //code for flickr api
   $("#btnSearch").click(function () {
     // Set the search term
     searchTerm = "";
@@ -38,57 +39,52 @@ $(document).ready(function () {
         "&tagmode=all";
       $.getJSON(url, function (data) {
         var html = "";
-        if(data.items.length>0){
+        if (data.items.length > 0) {
           $.each(data.items, function (i, item) {
             html += "<img src=" + item.media.m + ">";
             html += "<div class='details'><h2>" + item.title + "</h2>";
             html += "<p><b>Tags: </b>" + item.tags + "</p></div>";
           });
         } else {
-          html = "No search found. Please try again!!"
+          html = "No search found. Please try again!!";
         }
-        
+
         $("#photos").html(html);
       });
     }
   });
-  
-  
   animateHeading();
 });
 
 function animateHeading() {
   $("#flick")
-    .animate({ color: "rgb(230, 65, 114)"}, 1000)
-    .animate({ color: "", }, 1000)
+    .animate({ color: "rgb(230, 65, 114)" }, 1000)
+    .animate({ color: "" }, 1000)
     .queue(function () {
       animateHeading();
       $(this).dequeue();
     });
 }
 
+//function for starting the slider
 function startSlider() {
   nItems = $(".carousel > div").length;
-
   looper = setInterval(function () {
     if (iNextSlide > nItems) {
       iCurrentSlide = 1;
       iNextSlide = 1;
     }
-
     $(".carousel > div").hide();
     $(".carousel > #item" + iNextSlide).show();
-
     iCurrentSlide = iNextSlide;
     iNextSlide++;
   }, iSlideInterval * 1000);
 }
 
+//function for starting the slide show
 function showSlide(isPrev) {
   window.clearInterval(looper);
-
   var iNewSlide = 0;
-
   if (isPrev) {
     // Show previous slide:
     iNewSlide = --iCurrentSlide;

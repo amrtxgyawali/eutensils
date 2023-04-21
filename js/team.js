@@ -35,9 +35,5 @@ $(document).ready(() => {
     );
   });
 
-  $(".hiring-aside").hover(function() {
-    $(this).stop().animate({ backgroundColor: "red" }, 500);
-  }, function() {
-    $(this).stop().animate({ backgroundColor: "blue" }, 500);
-  });
+ 
 });
